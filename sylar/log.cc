@@ -18,7 +18,7 @@ void Logger::delAppender(LogAppender::ptr appender) {
 void Logger::log(LogLevel::Level level,LogEvent::ptr event){
 	if(level >= m_level){
 	    for(auto& i :m_appenders){
-	    i->log(level,event);
+	    	i->log(level,event);
 	    }
 	}
 }
